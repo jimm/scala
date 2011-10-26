@@ -1,0 +1,65 @@
+#
+# This is a test data file for test.rb. Blank lines and comment lines
+# (those starting with '#') are ignored. Data lines alternate between
+# test data and expected results.
+#
+# Results are strings obtained by parsing the data line, which returns
+# an array, and printing that array joined with '*'. That is,
+#
+#	array = parse_data_line()
+#	results = array.join('*')
+#
+
+some,comma-separated,data
+some*comma-separated*data
+
+empty,,column
+empty**column
+
+a,trailing,empty column,
+a*trailing*empty column*
+
+,,,
+***
+
+"quote at col end",next
+quote at col end*next
+
+how,about,"col in middle",this,time
+how*about*col in middle*this*time
+
+two,"quoted cols","in a row"
+two*quoted cols*in a row
+
+"quoted,comma",in,first,col
+quoted,comma*in*first*col
+
+"simple ""doubled quotes"" test"
+simple "doubled quotes" test
+
+"doubled at end ""quote""",ok
+doubled at end "quote"*ok
+
+"doubled at end ""quote"""
+doubled at end "quote"
+
+what happens when "quoted" simply with no outer quotes?
+what happens when "quoted" simply with no outer quotes?
+
+what happens when ""double quoted"" with no outer quotes?
+what happens when ""double quoted"" with no outer quotes?
+
+"""double quotes"" right at beginning",eh?
+"double quotes" right at beginning*eh?
+
+one stupid "quote in the middle should be ok
+one stupid "quote in the middle should be ok
+
+one stupid "quote in the middle,another column follows
+one stupid "quote in the middle*another column follows
+
+backslash \test
+backslash test
+
+backslashed\, that comma was
+backslashed, that comma was
