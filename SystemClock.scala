@@ -19,7 +19,7 @@ object SystemClock {
   val DT_PATTERN = Pattern.compile("(\\d{4})-(\\d{2})-(\\d{2})[Tt ](\\d{2}):(\\d{2}):(\\d{2})(\\.(\\d+))?([Zz]|([-+]\\d{2}:\\d{2}))")
   //         match groups             1          2        3           4        5        6      7     8   9     10
 
-  val frozenTime: Date = _
+  var frozenTime: Date = _
 
   /**
    * Returns the current time. If time is frozen, returns that time else
