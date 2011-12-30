@@ -47,7 +47,7 @@ object SystemClock {
    * is a very simplified version of
    * <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>.)
    */
-  def parse(datetime: String): Date {
+  def parse(datetime: String): Date = {
     if (datetime == null || datetime.length == 0)
       return null
 
@@ -84,7 +84,7 @@ object SystemClock {
    * <p>
    * If <var>d</var> is <code>null</code>, returns <code>null</code>.
    */
-  def toTS(d: Date): String {
+  def toTS(d: Date): String = {
     if (d == null)
       return null
 
