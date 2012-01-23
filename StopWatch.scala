@@ -1,8 +1,8 @@
 class StopWatch(val name:String = null) {
 
-  var t0: Long = 0
-  var elapsedMillis: Long = 0
-  var numStarts: Int = 0
+  var t0 = 0L
+  var elapsedMillis = 0L
+  var numStarts = 0
 
   def start {
     numStarts += 1
