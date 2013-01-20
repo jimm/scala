@@ -1,4 +1,4 @@
-import static org.junit.Assert._
+import org.junit.Assert._
 import java.util.{Calendar, Date}
 import org.scalatest.FunSuite
 import org.scalatest.BeforeAndAfter

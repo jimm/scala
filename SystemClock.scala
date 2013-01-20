@@ -1,4 +1,4 @@
-package utils
+// package utils
 
 import java.util._
 import java.util.regex._
@@ -71,7 +71,7 @@ object SystemClock {
     cal.set(Calendar.HOUR_OF_DAY, m.group(4).toInt)
     cal.set(Calendar.MINUTE, m.group(5).toInt)
     cal.set(Calendar.SECOND, m.group(6).toInt)
-    cal.set(Calendar.MILLISECOND, (m.group(7) == null) ? 0 : m.group(8).toInt)
+    cal.set(Calendar.MILLISECOND, if (m.group(7) == null) 0 else m.group(8).toInt)
     cal.getTime
   }
 
