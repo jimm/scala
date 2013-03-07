@@ -1,3 +1,5 @@
+import scala.language.implicitConversions
+
 class Rational(n: Int, d: Int) {
 
   private def gcd(a: Int, b: Int): Int = 
